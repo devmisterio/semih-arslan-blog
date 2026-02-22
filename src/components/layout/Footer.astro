@@ -1,15 +1,14 @@
 ---
-import { menuLinks, siteConfig } from "@/site.config";
+import { menuLinks } from "@/site.config";
 
 const year = new Date().getFullYear();
 ---
 
 <footer
-	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-600 sm:flex-row sm:justify-between sm:text-xs dark:text-gray-400"
+	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-500 sm:flex-row sm:justify-between sm:text-xs"
 >
-	<div class="me-0 sm:me-4">
-		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🚀&nbsp;{siteConfig.title}</span>
+	<div class="me-0 text-textColor/60 sm:me-4">
+		&copy; {year} Semih Arslan
 	</div>
 	<nav
 		aria-labelledby="footer_links"

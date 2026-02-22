@@ -13,30 +13,35 @@ const socialLinks: {
 	name: string;
 }[] = [
 	{
-		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
+		friendlyName: "GitHub",
+		link: "https://github.com/devmisterio",
 		name: "mdi:github",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://linkedin.com/in/semih-arslan-b06693189/",
+		name: "mdi:linkedin",
+	},
+	{
+		friendlyName: "E-posta",
+		link: "mailto:arslan_semih@yahoo.com",
+		name: "mdi:email",
 	},
 ];
 ---
 
-<div class="flex flex-wrap items-end gap-x-2">
-	<p>Find me on</p>
-	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
-		{
-			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
-				<li class="flex">
-					<a
-						class="hover:text-link inline-block"
-						href={link}
-						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
-						target="_blank"
-					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
-						<span class="sr-only">{friendlyName}</span>
-					</a>
-				</li>
-			))
-		}
-	</ul>
+<div class="mt-8 flex flex-wrap items-center gap-4">
+	{
+		socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
+			<a
+				class="group flex items-center gap-2 rounded-md border border-zinc-200 px-4 py-2 text-sm font-medium transition-colors hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:border-zinc-600 dark:hover:bg-zinc-900"
+				href={link}
+				rel={`noopener noreferrer ${isWebmention ? "me authn" : ""}`}
+				target={link.startsWith("mailto:") ? "_self" : "_blank"}
+			>
+				<Icon aria-hidden="true" class="h-5 w-5 text-gray-500 transition-colors group-hover:text-accent" focusable="false" name={name} />
+				<span>{friendlyName}</span>
+			</a>
+		))
+	}
 </div>

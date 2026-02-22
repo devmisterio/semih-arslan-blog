@@ -14,11 +14,11 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Used as the default description meta property and webmanifest description
-	description: "An opinionated starter theme for Astro",
+	description: "Sistem tasarımı, performans ve modern yazılım mimarileri üzerine teknik notlar.",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
 	lang: "tr",
 	// Meta property, found in src/components/BaseHead.astro L:42
-	ogLocale: "en_GB",
+	ogLocale: "tr_TR",
 	/* 
 		- Used to construct the meta title property found in src/components/BaseHead.astro L:11 
 		- The webmanifest name found in astro.config.ts L:42

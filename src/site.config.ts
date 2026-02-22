@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
 		- The link value found in src/components/layout/Header.astro L:35
 		- In the footer found in src/components/layout/Footer.astro L:12
 	*/
-	title: "Astro Cactus",
+	title: "Semih Arslan — Systems & Software",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
 	url: "https://astro-cactus.chriswilliams.dev/",
 };
@@ -34,19 +34,19 @@ export const siteConfig: SiteConfig = {
 export const menuLinks: { path: string; title: string }[] = [
 	{
 		path: "/",
-		title: "Home",
+		title: "Ana Sayfa",
 	},
 	{
 		path: "/about/",
-		title: "About",
+		title: "Hakkımda",
 	},
 	{
 		path: "/posts/",
-		title: "Blog",
+		title: "Yazılar",
 	},
 	{
 		path: "/notes/",
-		title: "Notes",
+		title: "Notlar",
 	},
 ];
 

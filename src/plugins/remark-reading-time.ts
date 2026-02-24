@@ -6,6 +6,7 @@ export function remarkReadingTime() {
 	return (tree, { data }) => {
 		const textOnPage = mdastToString(tree);
 		const readingTime = getReadingTime(textOnPage);
-		data.astro.frontmatter.readingTime = readingTime.text;
+		// "4 min read" şeklindeki metni "4 dk okuma" olarak Türkçeleştiriyoruz.
+		data.astro.frontmatter.readingTime = readingTime.text.replace("min read", "dk okuma");
 	};
 }

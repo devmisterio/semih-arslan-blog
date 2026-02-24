@@ -5,7 +5,7 @@ publishDate: "24 Feb 2026"
 coverImage:
   src: "./cover.webp"
   alt: ".NET 11 Preview 1 Cover Image"
-tags: ["dotnet", "csharp", "architecture", "performance"]
+tags: ["dotnet", "csharp", "architecture", "performance", "dotnet11"]
 ---
 
 .NET 11 Preview 1, yüzeyde küçük iyileştirmeler içeren bir sürüm gibi görünse de arka planda çalışma zamanı mimarisinden JIT optimizasyonlarına, dağıtık sistem araçlarından yapay zekâ entegrasyonuna kadar uzanan kapsamlı bir mühendislik yön değişimini işaret ediyor. Bu yazıda .NET 11’in teknik arka planını, alınan mimari kararları ve ekosistemin nereye evrildiğini katman katman ele alacağız.

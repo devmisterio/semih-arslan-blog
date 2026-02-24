@@ -32,7 +32,7 @@ const { page, uniqueTags, pinnedPosts } = Astro.props;
 
 const meta = {
 	description: "Read my collection of posts and the things that interest me",
-	title: "Posts",
+	title: "Yazılar",
 };
 
 const paginationProps = {
@@ -56,7 +56,7 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 
 <PageLayout meta={meta}>
 	<div class="mb-12 flex items-center gap-3">
-		<h1 class="title">Posts</h1>
+		<h1 class="title">Yazılar</h1>
 		<a class="text-accent" href="/rss.xml" target="_blank">
 			<span class="sr-only">RSS feed</span>
 			<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name="mdi:rss" />
@@ -82,7 +82,7 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 				descYearKeys.map((yearKey) => (
 					<section class="mb-16">
 						<h2 id={`year-${yearKey}`} class="title text-lg">
-							<span class="sr-only">Posts in</span>
+							<span class="sr-only">Yazıların bulunduğu yıl:</span>
 							{yearKey}
 						</h2>
 						<ul class="mt-5 space-y-4 text-start">
@@ -101,7 +101,7 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 			!!uniqueTags.length && (
 				<aside>
 					<h2 class="title mb-4 flex items-center gap-2 text-lg">
-						Tags
+						Etiketler
 						<svg
 							aria-hidden="true"
 							class="h-6 w-6"
@@ -124,7 +124,7 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 							<li>
 								<a class="cactus-link flex items-center justify-center" href={`/tags/${tag}/`}>
 									<span aria-hidden="true">#</span>
-									<span class="sr-only">View all posts with the tag</span>
+									<span class="sr-only">Bu etikete sahip tüm yazıları gör</span>
 									{tag}
 								</a>
 							</li>
@@ -132,8 +132,8 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 					</ul>
 					<span class="mt-4 block sm:text-end">
 						<a class="hover:text-link" href="/tags/">
-							View all <span aria-hidden="true">→</span>
-							<span class="sr-only">blog tags</span>
+							Tümünü gör <span aria-hidden="true">→</span>
+							<span class="sr-only">blog etiketleri</span>
 						</a>
 					</span>
 				</aside>

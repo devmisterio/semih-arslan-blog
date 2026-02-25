@@ -71,5 +71,5 @@
   "overrides": {
     "sharp": "^0.34.5"
   },
-  "packageManager": "pnpm@10.0.0"
+  "packageManager": "pnpm@10"
 }

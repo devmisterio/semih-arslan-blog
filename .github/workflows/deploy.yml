@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install, build, and upload your site
-        uses: withastro/action@v3
+        uses: withastro/action@v5
         with:
           node-version: 20
           # package-manager: npm # Uncomment if you specifically need npm, though Astro Action auto-detects based on lockfile

@@ -23,7 +23,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          node-version: 20
+          node-version: 22
           # package-manager: npm # Uncomment if you specifically need npm, though Astro Action auto-detects based on lockfile
 
   deploy:

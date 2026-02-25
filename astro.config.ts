@@ -22,7 +22,6 @@ import { expressiveCodeOptions, siteConfig } from "./src/site.config";
 // https://astro.build/config
 export default defineConfig({
 	site: siteConfig.url,
-	base: '/semih-arslan-blog',
 	image: {
 		domains: ["webmention.io"],
 	},

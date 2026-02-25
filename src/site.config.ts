@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	*/
 	title: "Semih Arslan — Systems & Software",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "https://arslansemih.com",
+	url: "https://devmisterio.github.io/semih-arslan-blog",
 };
 
 // Used to generate links in both the Header & Footer.
